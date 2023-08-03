@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="mainTitle">Tic Tac Toe!</h1>
+    <h3 class="winnerAnnounce"></h3>
+    <div class="gridWrapper">
+      <div class="grid">
+        <div
+          class="gridItem topLeft"
+          data-coordinate="0-0"
+          onclick="addToBoard(this.getAttribute('data-coordinate'))"
+        ></div>
+        <div
+          class="gridItem topMiddle"
+          data-coordinate="0-1"
+          onclick="addToBoard(this.getAttribute('data-coordinate'))"
+        ></div>
+        <div
+          class="gridItem topRight"
+          data-coordinate="0-2"
+          onclick="addToBoard(this.getAttribute('data-coordinate'))"
+        ></div>
+        <div
+          class="gridItem middleLeft"
+          data-coordinate="1-0"
+          onclick="addToBoard(this.getAttribute('data-coordinate'))"
+        ></div>
+        <div
+          class="gridItem"
+          data-coordinate="1-1"
+          onclick="addToBoard(this.getAttribute('data-coordinate'))"
+        ></div>
+        <div
+          class="gridItem middleRight"
+          data-coordinate="1-2"
+          onclick="addToBoard(this.getAttribute('data-coordinate'))"
+        ></div>
+        <div
+          class="gridItem bottomLeft"
+          data-coordinate="2-0"
+          onclick="addToBoard(this.getAttribute('data-coordinate'))"
+        ></div>
+        <div
+          class="gridItem bottomMiddle"
+          data-coordinate="2-1"
+          onclick="addToBoard(this.getAttribute('data-coordinate'))"
+        ></div>
+        <div
+          class="gridItem bottomRight"
+          data-coordinate="2-2"
+          onclick="addToBoard(this.getAttribute('data-coordinate'))"
+        ></div>
+      </div>
+    </div>
+    <script src="index.js" defer></script>
+  </body>
+</html>
