@@ -44,6 +44,15 @@ const gameboard = (() => {
     ]);
   };
 
+  // reset entire game
+  const resetGame = () => {
+    resetGameboard();
+    updateDisplay();
+    setGameOver(false);
+    isPlayer1Turn = true;
+    winnerAnnounce.innerText = "";
+  };
+
   // check if gameboard is full
   // will be used by function to check for tie
   const isBoardFull = () => {
@@ -76,6 +85,7 @@ const gameboard = (() => {
     isBoardFull,
     isGameOver,
     setGameOver,
+    resetGame,
   };
 })();
 
